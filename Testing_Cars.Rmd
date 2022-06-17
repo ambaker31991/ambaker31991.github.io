@@ -1,0 +1,27 @@
+---
+title: "GitHub Pages Test"
+author: "Aaron Baker"
+date: '2022-06-17'
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Load pages: 
+
+```{r packages, echo=FALSE}
+library(tidyverse)
+```
+Summary of Data: 
+
+```{r cars}
+summary(cars)
+```
+Generate a scatter plot: 
+
+```{r pressure}
+ggplot(cars, aes(x=speed, y=dist)) + geom_point() + geom_smooth()
+```
